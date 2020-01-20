@@ -5,7 +5,7 @@ import API from "../adapters/API";
 
 function SignupForm() {
   const [email, setEmail] = useState("");
-  const [fields, handleFieldChange] = useFormFields({
+  const [display_name, setDisPlayName] = useFormFields({
     display_name: "",
     email: "",
     password: ""
