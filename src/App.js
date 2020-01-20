@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { routes } from "./config/routes";
-import { Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { Container, Message } from "semantic-ui-react";
 
 const notFoundMessage = () => {

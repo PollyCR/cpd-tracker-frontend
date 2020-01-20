@@ -3,12 +3,19 @@ import Diary from "../Components/Diary.js";
 import Entry from "../Components/Entry";
 import LoginForm from "../Components/LoginForm.js";
 import NewEntryForm from "../Components/NewEntryForm.js";
+import WelcomeContainer from "../Containers/WelcomeContainer.js";
+import SignupForm from "../Components/SignupForm.js";
 
 export const routes = [
   {
     title: "Home",
     path: "/",
     component: Home
+  },
+  {
+    title: "Welcome to CPD Tracker",
+    path: "/welcome",
+    component: WelcomeContainer
   },
   {
     title: "Diary",
@@ -33,7 +40,8 @@ export const routes = [
   },
   {
     title: "Sign up",
-    path: "/signup"
+    path: "/signup",
+    component: SignupForm
   },
   {
     title: "Log out",

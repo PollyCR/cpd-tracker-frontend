@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import API from "../adapters/API";
 
-export class Home extends Component {
+export class DashboardContainer extends Component {
   componentDidMount = () => {
     API.validateUser().then(user => {
       this.setState({ user });
@@ -12,8 +11,8 @@ export class Home extends Component {
     });
   };
   render() {
-    return <div>Hello you've hit the home page</div>;
+    return <div>Hello</div>;
   }
 }
 
-export default Home;
+export default DashboardContainer;
